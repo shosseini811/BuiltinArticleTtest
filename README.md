@@ -104,6 +104,26 @@ We will perform a paired t-test to compare the mean attention scores of the subj
    attention = sns.load_dataset('attention')
 3. Filter the dataset for treatment type 1:
    ```python
+   treatment_type1 = attention[attention['solutions'] == 1]
+4. Extract the attention scores before and after the treatment:
+   ```python
+   before_treatment_scores = treatment_type1['score_before']
+   after_treatment_scores = treatment_type1['score_after']
+5. Perform the paired t-test:
+   ```python
+   t_stat, p_value = stats.ttest_rel(before_treatment_scores, after_treatment_scores)
+
+6. **Interpret the results:**
+```python
+   alpha = 0.05
+   if p_value < alpha:
+       print("Reject the null hypothesis; there is a significant difference between the attention scores before and after treatment type 1.")
+   else:
+       print("Fail to reject the null hypothesis; there is no significant difference between the attention scores before and after treatment type 1.")
+
+
+
+
 
 
 
