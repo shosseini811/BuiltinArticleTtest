@@ -37,7 +37,7 @@ Using Python for t-tests offers several benefits:
 - The results of t-tests can be easily visualized in Python.
 
 
-## Section 3: Sample T-Test in Python Example 1
+## Section 3: Sample T-Test with the Iris Dataset in Python
 To demonstrate the use of a t-test, we will use the famous "Iris" dataset available in the Seaborn library. The Iris dataset contains information on 150 iris flowers from three different species (setosa, versicolor, and virginica), with 50 samples from each species. The dataset has four features: sepal length, sepal width, petal length, and petal width.
 
 ### Sub-section 3: Steps to Calculate
@@ -73,7 +73,7 @@ In this example, we will perform a t-test to compare the mean petal lengths of I
 
 This t-test compares the mean petal lengths of Iris setosa and Iris versicolor, and the result should indicate that there is a significant difference between the two species.
 
-## Section 4: Sample T-Test in Python Example 2
+## Section 4: Sample T-Test with tips dataset in Python 
 ### Sub-section 4: Steps to Calculate
 In this example, we will use the built-in "tips" dataset available in the Seaborn library. The tips dataset contains information about the total bill amount, tip amount, gender, smoker status, day, time, and size of the party for different meals at a restaurant.
 
@@ -150,19 +150,4 @@ This paired t-test compares the mean attention scores of the subjects before and
 - **Verify the data type**: Ensure that the data type of your input is correct. For example, using a list instead of a NumPy array can lead to errors.
 - **Interpret p-values cautiously**: Always consider the context of your study when interpreting p-values. A low p-value indicates that the results are statistically significant but does not prove causality or the practical significance of the difference.
 - **Use appropriate libraries**: Utilize libraries like SciPy and NumPy to simplify the process of performing a t-test and other statistical analyses in Python.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
