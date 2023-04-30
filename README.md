@@ -121,6 +121,15 @@ We will perform a paired t-test to compare the mean attention scores of the subj
    else:
        print("Fail to reject the null hypothesis; there is no significant difference between the attention scores before and after treatment type 1.")
 
+This paired t-test compares the mean attention scores of the subjects before and after the treatment of type 1, and the result should indicate whether there is a significant difference in the scores.
+
+## Section 6: Troubleshooting Tips for Using T-Test in Python
+
+- **Check data assumptions**: Ensure that your data meets the assumptions of the t-test before proceeding with the analysis. If your data violates any of the assumptions, consider using alternative statistical tests.
+- **Handle missing values**: Remove or impute missing values in your dataset before performing the t-test. Missing values can lead to inaccurate results.
+- **Verify the data type**: Ensure that the data type of your input is correct. For example, using a list instead of a NumPy array can lead to errors.
+- **Interpret p-values cautiously**: Always consider the context of your study when interpreting p-values. A low p-value indicates that the results are statistically significant but does not prove causality or the practical significance of the difference.
+- **Use appropriate libraries**: Utilize libraries like SciPy and NumPy to simplify the process of performing a t-test and other statistical analyses in Python.
 
 
 
