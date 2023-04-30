@@ -113,7 +113,7 @@ We will perform a paired t-test to compare the mean attention scores of the subj
    ```python
    t_stat, p_value = stats.ttest_rel(before_treatment_scores, after_treatment_scores)
 
-6. **Interpret the results:**
+6. Interpret the results:
 ```python
    alpha = 0.05
    if p_value < alpha:
