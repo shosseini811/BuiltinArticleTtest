@@ -125,7 +125,7 @@ This paired t-test compares the mean attention scores of the subjects before and
 
 ## Section 6: Troubleshooting Tips for Using T-Test in Python
 
-- **Check data assumptions**: Ensure that your data meets the assumptions of the t-test before proceeding with the analysis. If your data violates any of the assumptions, consider using alternative statistical tests.
+**Check data assumptions**: Ensure that your data meets the assumptions of the t-test before proceeding with the analysis. If your data violates any of the assumptions, consider using alternative statistical tests.
 - **Handle missing values**: Remove or impute missing values in your dataset before performing the t-test. Missing values can lead to inaccurate results.
 - **Verify the data type**: Ensure that the data type of your input is correct. For example, using a list instead of a NumPy array can lead to errors.
 - **Interpret p-values cautiously**: Always consider the context of your study when interpreting p-values. A low p-value indicates that the results are statistically significant but does not prove causality or the practical significance of the difference.
