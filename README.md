@@ -29,3 +29,11 @@ In this example, we will perform a t-test to compare the mean petal lengths of I
    import seaborn as sns
    import numpy as np
    from scipy import stats
+2. Load the Iris dataset:
+   ```python
+   iris = sns.load_dataset('iris')
+3. Filter the dataset for the two species we want to compare:
+   ```python
+   setosa = iris[iris['species'] == 'setosa']
+   versicolor = iris[iris['species'] == 'versicolor']
+
