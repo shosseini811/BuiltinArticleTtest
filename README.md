@@ -71,7 +71,7 @@ In this example, we will perform a t-test to compare the mean petal lengths of I
    else:
        print("Fail to reject the null hypothesis; there is no significant difference between the petal lengths of Iris setosa and Iris versicolor.")
 
-This t-test compares the mean petal lengths of Iris setosa and Iris versicolor, and the result should indicate that there is a significant difference between the two species.
+This t-test compares the mean petal lengths of Iris setosa and Iris versicolor. The obtained p-value, which is approximately `5.40e-62` indicates that there is a significant difference between the two species.
 
 ## Section 4: Sample T-Test with tips dataset in Python 
 ### Sub-section 4: Steps to Calculate
