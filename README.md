@@ -29,16 +29,16 @@ Using Python for t-tests offers several benefits:
 
 ## Section 2: Benefits of using a T-Test in Python
 Using Python for t-tests offers several benefits:
-- Open-source: Python is a free, open-source programming language, which makes it accessible to everyone.
-- Easy to learn: Python has a simple syntax and is widely considered one of the easiest programming languages to learn.
-- Extensive libraries: Python offers various libraries, such as SciPy and NumPy, which simplify complex mathematical and statistical calculations.
-- Reproducibility: Python code is easy to share, allowing others to reproduce your analysis and build upon your work.
+- Python is a powerful and versatile programming language that can be used for a variety of tasks, including data analysis.
+- There are many libraries available for Python that make it easy to perform t-tests.
+- T-tests can be performed quickly and easily in Python.
+- The results of t-tests can be easily visualized in Python.
+
 
 ## Section 3: Sample T-Test in Python Example 1
-In this example, we'll perform an independent samples t-test comparing the average heights of two groups: Group A and Group B.
+To demonstrate the use of a t-test, we will use the famous "Iris" dataset available in the Seaborn library. The Iris dataset contains information on 150 iris flowers from three different species (setosa, versicolor, and virginica), with 50 samples from each species. The dataset has four features: sepal length, sepal width, petal length, and petal width.
 
 ### Sub-section 3: Steps to Calculate
-To demonstrate the use of a t-test, we will use the famous "Iris" dataset available in the Seaborn library. The Iris dataset contains information on 150 iris flowers from three different species (setosa, versicolor, and virginica), with 50 samples from each species. The dataset has four features: sepal length, sepal width, petal length, and petal width.
 
 In this example, we will perform a t-test to compare the mean petal lengths of Iris setosa and Iris versicolor.
 
