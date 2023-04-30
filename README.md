@@ -86,7 +86,13 @@ We will perform a t-test to compare the mean total bill amounts for lunch and di
    else:
        print("Fail to reject the null hypothesis; there is no significant difference between the total bill amounts for lunch and dinner.")
 
+This t-test compares the mean total bill amounts for lunch and dinner, and the result should indicate whether there is a significant difference between the two meal times.
 
+## Section 5: Paired T-Test in Python
+### Sub-Section 5: Steps to Calculate
+For this example, we will use the built-in "attention" dataset available in the Seaborn library. The attention dataset is an experimental dataset that contains data from a study investigating the effects of different stimuli on the attention scores of subjects. The dataset includes the subject ID, attention scores before and after the treatment, and the type of treatment.
+
+We will perform a paired t-test to compare the mean attention scores of the subjects before and after the treatment of type 1.
 
 
 
