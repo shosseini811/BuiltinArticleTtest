@@ -15,7 +15,9 @@ The data should follow a normal distribution in each group. Normality can be vis
 ### Equal variances
 The variances of the two groups should be approximately equal, although there are variations of the t-test that can handle unequal variances. To assess the equality of variances, you can use graphical methods like box plots, or perform a formal test like Levene's test or Bartlett's test. If the variances are not equal, a Welch's t-test can be used as it does not assume equal variances.
 
-It is essential to consider these assumptions before performing a t-test, as it can help you choose the appropriate test and avoid drawing incorrect conclusions from your data.
+If these assumptions are not met, the results of the t-test may not be reliable. In these cases, it may be necessary to use a non-parametric test, which does not make these assumptions.
+
+T-tests are a powerful tool for comparing the means of two groups. However, it is important to make sure that the assumptions of the test are met before using it.
 
 ## Section 2: Benefits of using a T-Test in Python
 Using Python for t-tests offers several benefits:
