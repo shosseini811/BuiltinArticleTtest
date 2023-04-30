@@ -36,4 +36,64 @@ In this example, we will perform a t-test to compare the mean petal lengths of I
    ```python
    setosa = iris[iris['species'] == 'setosa']
    versicolor = iris[iris['species'] == 'versicolor']
+4. Extract the petal lengths for each species:
+   ```python
+   setosa_petal_lengths = setosa['petal_length']
+   versicolor_petal_lengths = versicolor['petal_length']
+5. Perform the t-test:
+   ```python
+   t_stat, p_value = stats.ttest_ind(setosa_petal_lengths, versicolor_petal_lengths)
+6. Interpret the results:
+   ```python
+   alpha = 0.05
+   if p_value < alpha:
+       print("Reject the null hypothesis; there is a significant difference between the petal lengths of Iris setosa and Iris versicolor.")
+   else:
+       print("Fail to reject the null hypothesis; there is no significant difference between the petal lengths of Iris setosa and Iris versicolor.")
+
+This t-test compares the mean petal lengths of Iris setosa and Iris versicolor, and the result should indicate that there is a significant difference between the two species.
+
+## Section 4: Sample T-Test in Python Example 2
+### Sub-section 4: Steps to Calculate
+In this example, we will use the built-in "tips" dataset available in the Seaborn library. The tips dataset contains information about the total bill amount, tip amount, gender, smoker status, day, time, and size of the party for different meals at a restaurant.
+
+We will perform a t-test to compare the mean total bill amounts for lunch and dinner.
+1. Import the necessary libraries:
+   ```python
+   import seaborn as sns
+   import numpy as np
+   from scipy import stats
+2. Load the tips dataset:
+   ```python
+   tips = sns.load_dataset('tips')
+
+3. Filter the dataset for lunch and dinner:
+   ```python
+   lunch = tips[tips['time'] == 'Lunch']
+   dinner = tips[tips['time'] == 'Dinner']
+4. Extract the total bill amounts for lunch and dinner:
+   ```python
+   lunch_total_bills = lunch['total_bill']
+   dinner_total_bills = dinner['total_bill']
+5. Perform the t-test:
+   ```python
+   t_stat, p_value = stats.ttest_ind(lunch_total_bills, dinner_total_bills)
+6. Interpret the results:
+   ```python
+   alpha = 0.05
+   if p_value < alpha:
+       print("Reject the null hypothesis; there is a significant difference between the total bill amounts for lunch and dinner.")
+   else:
+       print("Fail to reject the null hypothesis; there is no significant difference between the total bill amounts for lunch and dinner.")
+
+
+
+
+
+
+
+
+
+
+  
 
