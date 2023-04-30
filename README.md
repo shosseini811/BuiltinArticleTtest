@@ -94,6 +94,20 @@ For this example, we will use the built-in "attention" dataset available in the 
 
 We will perform a paired t-test to compare the mean attention scores of the subjects before and after the treatment of type 1.
 
+1. Import the necessary libraries:
+   ```python
+   import seaborn as sns
+   import numpy as np
+   from scipy import stats
+2. Load the attention dataset:
+   ```python
+   attention = sns.load_dataset('attention')
+3. Filter the dataset for treatment type 1:
+   ```python
+
+
+
+
 
 
 
