@@ -1,13 +1,31 @@
 # How to do a T-Test in Python
 
 ## Introduction
-The t-test is a common statistical method used to determine whether there is a significant difference between the means of two groups. In this article, we will discuss the assumptions of a t-test, its benefits when using Python, and how to perform various types of t-tests in Python with examples. We will also provide troubleshooting tips for using t-tests in Python.
+The t-test is a common statistical method used to determine whether there is a significant difference between the means of two groups. In the field of statistics and data analysis, t-tests are widely used to compare sample populations and infer conclusions about the larger population. In this article, we will discuss the assumptions of a t-test, its benefits when using Python, and how to perform various types of t-tests in Python with examples. We will also provide troubleshooting tips for using t-tests in Python.
 
 ## Section 1: What are the assumptions of a T-Test?
-A t-test is based on several assumptions that need to be met for the results to be valid. These assumptions are:
-- Independence of observations: The data points in each group should be independent of each other.
-- Normality: The data should follow a normal distribution in each group. However, t-tests are relatively robust to violations of normality when the sample size is large.
-- Equal variances: The variances of the two groups should be approximately equal, although there are variations of the t-test that can handle unequal variances.
+A t-test is based on several assumptions that need to be met for the results to be valid. Violations of these assumptions may lead to incorrect conclusions. These assumptions are:
+
+### Independence of observations
+The data points in each group should be independent of each other. This means that the outcome of one observation should not affect the outcome of another observation. Independence can be achieved by using random sampling or experimental designs that account for potential confounding factors. In cases where independence cannot be assumed, alternative tests such as mixed-effects models or repeated measures ANOVA may be more appropriate.
+
+### Normality
+The data should follow a normal distribution in each group. Normality can be visually assessed using histograms or quantile-quantile (QQ) plots, or tested using formal tests such as the Shapiro-Wilk test or the Kolmogorov-Smirnov test. However, t-tests are relatively robust to violations of normality when the sample size is large. For small sample sizes or severely non-normal data, non-parametric alternatives such as the Mann-Whitney U test or the Wilcoxon signed-rank test can be used.
+
+### Equal variances
+The variances of the two groups should be approximately equal, although there are variations of the t-test that can handle unequal variances. To assess the equality of variances, you can use graphical methods like box plots, or perform a formal test like Levene's test or Bartlett's test. If the variances are not equal, a Welch's t-test can be used as it does not assume equal variances.
+
+It is essential to consider these assumptions before performing a t-test, as it can help you choose the appropriate test and avoid drawing incorrect conclusions from your data.
+
+## Section 2: Benefits of using a T-Test in Python
+Using Python for t-tests offers several benefits:
+
+- **Open-source**: Python is a free, open-source programming language, which makes it accessible to everyone.
+- **Easy to learn**: Python has a simple syntax and is widely considered one of the easiest programming languages to learn.
+- **Extensive libraries**: Python offers various libraries, such as SciPy and NumPy, which simplify complex mathematical and statistical calculations.
+- **Reproducibility**: Python code is easy to share, allowing others to reproduce your analysis and build upon your work.
+ 
+
 
 ## Section 2: Benefits of using a T-Test in Python
 Using Python for t-tests offers several benefits:
