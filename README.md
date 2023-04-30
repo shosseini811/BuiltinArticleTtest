@@ -106,7 +106,7 @@ We will perform a t-test to compare the mean total bill amounts for lunch and di
    else:
        print("Fail to reject the null hypothesis; there is no significant difference between the total bill amounts for lunch and dinner.")
 
-This t-test compares the mean total bill amounts for lunch and dinner, and the result should indicate whether there is a significant difference between the two meal times.
+This t-test compares the mean total bill amounts for lunch and dinner, and  the obtained p-value, which is approximately `0.0041` indicates there is a significant difference between the two meal times.
 
 ## Section 5: Paired T-Test in Python
 ### Sub-Section 5: Steps to Calculate
