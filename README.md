@@ -129,7 +129,7 @@ In this section, we will perform a paired t-test to compare the mean pulse rate 
    t_stat, p_value = stats.ttest_rel(before_exercise_pulse.values, after_exercise_pulse.values)
    
 8. Print the p-value for the paired t-test:
-  ```python
+   ```python
    print("p-value for paired t-test: ", p_value)
   
 In this case, the p-value 0.1914 is greater than the alpha 0.05, so we fail to reject the null hypothesis. This suggests that there is no significant difference in the mean pulse rate of subjects before and after the "rest" exercise.
