@@ -110,38 +110,37 @@ This t-test compares the mean total bill amounts for lunch and dinner, and  the 
 
 ## Section 5: Paired T-Test in Python
 ### Sub-Section 5: Steps to Calculate
-For this example, we will use the built-in "attention" dataset available in the Seaborn library. The attention dataset is an experimental dataset that contains data from a study investigating the effects of different stimuli on the attention scores of subjects. The dataset includes the subject ID, attention scores before and after the treatment, and the type of treatment.
-
-We will perform a paired t-test to compare the mean attention scores of the subjects before and after the treatment of type 1.
-
+In this section, we will perform a paired t-test to compare the mean pulse rate of subjects before and after the exercise of type "rest" using Python. The following steps outline the process:
 1. Import the necessary libraries:
    ```python
    import seaborn as sns
    import numpy as np
    from scipy import stats
-2. Load the attention dataset:
-   ```python
-   attention = sns.load_dataset('attention')
-3. Filter the dataset for treatment type 1:
-   ```python
-   treatment_type1 = attention[attention['solutions'] == 1]
-4. Extract the attention scores before and after the treatment:
-   ```python
-   before_treatment_scores = treatment_type1['score_before']
-   after_treatment_scores = treatment_type1['score_after']
-5. Perform the paired t-test:
-   ```python
-   t_stat, p_value = stats.ttest_rel(before_treatment_scores, after_treatment_scores)
 
-6. Interpret the results:
+2. Load the exercise dataset:
    ```python
-   alpha = 0.05
-   if p_value < alpha:
-       print("Reject the null hypothesis; there is a significant difference between the attention scores before and after treatment type 1.")
-   else:
-       print("Fail to reject the null hypothesis; there is no significant difference between the attention scores before and after treatment type 1.")
+   exercise = sns.load_dataset('exercise')
+3. Filter the dataset for exercise type "rest":
+   ```python
+   rest_exercise = exercise[exercise['kind'] == 'rest']
 
-This paired t-test compares the mean attention scores of the subjects before and after the treatment of type 1, and the result should indicate whether there is a significant difference in the scores.
+4. Convert the 'time' column to an integer (in minutes) for comparison purposes:
+   ```python
+   rest_exercise['time'] = rest_exercise['time'].apply(lambda x: int(x.split()[0]))
+5. Sort and reset the index for the rest_exercise DataFrame:
+   ```python
+   rest_exercise_sorted = rest_exercise.sort_values(['id', 'time']).reset_index(drop=True)
+6. Extract the pulse rates before and after the exercise:
+   ```python
+   before_exercise_pulse = rest_exercise_sorted[rest_exercise_sorted['time'] == 1]['pulse']
+   after_exercise_pulse = rest_exercise_sorted[rest_exercise_sorted['time'] == 15]['pulse']
+7. Perform the paired t-test:
+   ```python
+   t_stat, p_value = stats.ttest_rel(before_exercise_pulse.values, after_exercise_pulse.values)
+8. Print the p-value for the paired t-test:
+  ```python
+  print("p-value for paired t-test: ", p_value)
+In this case, the p-value `0.1914` is greater than the alpha `0.05`, so we fail to reject the null hypothesis. This suggests that there is no significant difference in the mean pulse rate of subjects before and after the "rest" exercise.
 
 ## Section 6: Troubleshooting Tips for Using T-Test in Python
 
