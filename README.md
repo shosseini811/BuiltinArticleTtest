@@ -130,13 +130,14 @@ In this section, we will perform a paired t-test to compare the mean pulse rate 
 8. Print the p-value for the paired t-test:
   ```python
   print("p-value for paired t-test: ", p_value)
+  
 In this case, the p-value `0.1914` is greater than the alpha `0.05`, so we fail to reject the null hypothesis. This suggests that there is no significant difference in the mean pulse rate of subjects before and after the "rest" exercise.
 
 ## Section 6: Troubleshooting Tips for Using T-Test in Python
 
 **Check data assumptions**: Ensure that your data meets the assumptions of the t-test before proceeding with the analysis. If your data violates any of the assumptions, consider using alternative statistical tests.
-- **Handle missing values**: Remove or impute missing values in your dataset before performing the t-test. Missing values can lead to inaccurate results.
-- **Verify the data type**: Ensure that the data type of your input is correct. For example, using a list instead of a NumPy array can lead to errors.
-- **Interpret p-values cautiously**: Always consider the context of your study when interpreting p-values. A low p-value indicates that the results are statistically significant but does not prove causality or the practical significance of the difference.
-- **Use appropriate libraries**: Utilize libraries like SciPy and NumPy to simplify the process of performing a t-test and other statistical analyses in Python.
+**Handle missing values**: Remove or impute missing values in your dataset before performing the t-test. Missing values can lead to inaccurate results.
+**Verify the data type**: Ensure that the data type of your input is correct. For example, using a list instead of a NumPy array can lead to errors.
+**Interpret p-values cautiously**: Always consider the context of your study when interpreting p-values. A low p-value indicates that the results are statistically significant but does not prove causality or the practical significance of the difference.
+**Use appropriate libraries**: Utilize libraries like SciPy and NumPy to simplify the process of performing a t-test and other statistical analyses in Python.
 
