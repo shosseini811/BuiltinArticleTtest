@@ -21,16 +21,6 @@ T-tests are a powerful tool for comparing the means of two groups. However, it i
 
 ## Section 2: Benefits of using a T-Test in Python
 Using Python for t-tests offers several benefits:
-
-- **Open-source**: Python is a free, open-source programming language, which makes it accessible to everyone.
-- **Easy to learn**: Python has a simple syntax and is widely considered one of the easiest programming languages to learn.
-- **Extensive libraries**: Python offers various libraries, such as SciPy and NumPy, which simplify complex mathematical and statistical calculations.
-- **Reproducibility**: Python code is easy to share, allowing others to reproduce your analysis and build upon your work.
- 
-
-
-## Section 2: Benefits of using a T-Test in Python
-Using Python for t-tests offers several benefits:
 - Python is a powerful and versatile programming language that can be used for a variety of tasks, including data analysis.
 - There are many libraries available for Python that make it easy to perform t-tests.
 - T-tests can be performed quickly and easily in Python.
