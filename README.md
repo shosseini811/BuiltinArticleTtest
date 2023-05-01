@@ -127,6 +127,7 @@ In this section, we will perform a paired t-test to compare the mean pulse rate 
 7. Perform the paired t-test:
    ```python
    t_stat, p_value = stats.ttest_rel(before_exercise_pulse.values, after_exercise_pulse.values)
+   
 8. Print the p-value for the paired t-test:
   ```python
   print("p-value for paired t-test: ", p_value)
